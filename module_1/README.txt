@@ -1,3 +1,16 @@
+Project task:
+-Test the ability to use pandas operator;
+-To do so, a Movie Analyst Case Study is used;
+-Project includes 27 different questions related to a given dataset;
+-Dataset includes information about 1889 movies released from 2000 to 2015;
+
+
+File "Movies_IMBD_v5_draft.ipynb" contains raw code with no comments and does not follow pep-8 stantard. 
+File "Movies_IMBD_2000-2015_analysis.ipynb" contains all the questions in English and Russian, as well as the code that answers those questions.
+
+
+
+
 Задача проекта:
 -Протестировать себя на умение оперировать оператором pandas;
 -Для этого будет взят Case Studies, предлагающий роль аналитика в компании кинопроката;
@@ -26,6 +39,3 @@
 Стратегия:
 -Общий план остается тем-же - постепенное прохождение модуля и решение задач, возможное создание небольших кусков кода для развлечения и практики,
 закрепление пройденного материала с помощью проекта в конце.
-
-File "Movies_IMBD_v5_draft.ipynb" contains raw code with no comments and does not follow pep-8 stantart. 
-File "Movies_IMBD_2000-2015_analysis.ipynb" contains all the questions in English and Russian, as well as the code that answers those questions.
