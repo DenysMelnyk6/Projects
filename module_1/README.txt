@@ -1,4 +1,4 @@
-Project task:
+Project goal:
 -Test the ability to use pandas operator;
 -To do so, a Movie Analyst Case Study is used;
 -Project includes 27 different questions related to a given dataset;
