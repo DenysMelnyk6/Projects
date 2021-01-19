@@ -1,0 +1,81 @@
+Both programs yilded the similar results, with just a minor variations of the correlation
+coefficients values. The following columns were selected:
+numerical: external_fails, age, social_activities, heath, 
+travel_time, free_time, family_relationship, absences,
+independent_studytime, father_education, mother_education.
+
+nominative: tutor, pursues_higher_education, in_relationship,
+mother_job, sex, address.
+
+Overall, the data did have plenty of empty values in many columns,
+with even exam scores missing for some students. Certain columns(sex, school, age)
+did not have any null values at all, but overaall the columns had
+around 19 empty values on average.
+
+There were not that many outliers, with few occassional typo's. There
+were many outliers in the column "absences", but other than that the
+data was rather clear. There were no statistical outliers in the score
+column.
+
+Analysis of numerical columns selected:
+external_fails: out of all the numerical values
+this one had the strongest negative correlation(-0.34 with imputation,
+-0.35 without imputation both to 2 d.p.), but the 
+column in itself is very ambiguous. The correlation implies
+that students who suffer no external failures tend to do better in exam.
+
+age: a weak negative correlation implies that younger students perform better
+in exams, either due to more free time they can spend on revision, or due to
+better academic abilities of students who do not need to re-sit the exam.
+
+social_activities - weak negative correlation implies that
+students with high social activity perform worse during in exams,
+probably due to sacrificing extra revision hours on social activities.
+
+health - healthy students tend to perform worse during the exams, potentially
+due to having more ability to spend their time elsewhere. The reasoning for
+this one is ambiguous.
+
+free_time - a weak positive correlation can be seen here, impying that students with
+more free time perform better in the exams, potentially due to having less exoustion
+from both mental and physical activities.
+
+family_relationship - a weak positive correlation implies that families with good
+relationship may be providing a healthier envirement for studying.
+
+absences - an odd weak positive correlation can be seen here. From the graph,
+it is clear that students with no absences tend to have a larger spread of the results,
+yet the line or regression still implies that students who miss a few days of school
+perform better in an exam, potentially due to ability to choose their own pace of studying
+at home or due to quiet envirement at home. This does not include the students with
+long absences.
+
+independent_studytime - a common sense - the more student revises at home,
+the better he performs in an exam.
+
+father_education and mother_education - positive correlation here implies that
+parents tend to help their children perform better if they have better education.
+For both programs the correlation coefficent for mother education is higher, implying
+that mum's take to participate more in their children's education.
+
+nominative:
+
+tutor - the data suggests that students who have a math tutor tend
+to have a smaller spread of marks - their minimal score is greater than
+the minimal score of students who do not, yet their maximal value is lower, suggesting
+that students who perform the best do not need a math tutor to get a good score.
+
+pursues_higher_education - students who wish to get a degree afther the exam tend to
+perorm better all around - their minimal, maximal, mean and median are well above.
+
+in_relationship - the data suggests that students who are in a relationship tend to perform
+a little bit worse.
+
+mother_job - it is unclear why this column has a higher spread than the father_job one,
+but as suggested in mother_education, it might be due to the fact that mother's tend to
+participate more in their children's education.
+
+sex - the data shows that boys tend to perform a little bit better in maths than the girls.
+
+address - the students living in Urban areas tend to perform better, potentially due to easier access
+to different sources of information such as libraries.
