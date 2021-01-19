@@ -9,7 +9,7 @@ mother_job, sex, address.
 
 Overall, the data did have plenty of empty values in many columns,
 with even exam scores missing for some students. Certain columns(sex, school, age)
-did not have any null values at all, but overaall the columns had
+did not have any null values at all, but overall the columns had
 around 19 empty values on average.
 
 There were not that many outliers, with few occassional typo's. There
