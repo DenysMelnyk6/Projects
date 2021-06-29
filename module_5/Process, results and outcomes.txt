@@ -1,0 +1,40 @@
+Results of the project are unsatisfactory for many reasons, but motly it can be narrowed down to 2:
+1. Unstable internet connection did not allow for parcing of a decent sample of training data.
+Baseline code on Kaggle used a sample of a size of 70000. Many other people on Kaggle who managed to
+achieve good results had a sample frame of over 30000 values, while mine was only 10000 before dropping
+duplicates and car brands not required for the project. Due to this, I was unable to make multiple iterations
+of data collecting code, which prevented me from doing anything about columns 'description' and 'super_gen', 
+so a lot of data had to be dropped from the test dataframe. Despite this being absolutely feasable with my level of
+knowledge and ability, I simply encountered too many issues with my connection, which prevented me from getting a decent sample, and by
+the time I could dedicate more time to that, the deadline was already approaching. 
+2. Working on my own. By the time the deadline was approaching, I asked another person who does not do IT-related
+studies to run the code for data collection for me. This proved to make the proccess much easier, and made me
+consider to do a project together with another studying Junior Data Scientist next time, allowing both of us
+to manage the time more efficiently and make the process much less stressful.
+
+The best result achieved 29.09%, which did manage to overcome the Baseline value of approximately 30%.
+Almost every single model ended up underfitted/overfitted, and when I attempted
+to single out some specific car types(e.g. Limos or pink cars which were very rare) it resulted in MAPE taking a significant hit.
+Personally I would attempt to improve it to at least 25% or even 20%.
+The first two steps I would take would be to add more data(at least 30-50k cars before dropping duplicates) and expand the
+data that was parced - add description, add sentiment analysis, maybe take some values out of the 'super_gen' column and improve 
+certain more speicific columns. Extra columns would be able to fix underfitting, while diversifying the data from more results would
+deal with overfitting. 
+
+The process of the project was fairly messy. Some external studying had to be done in order to successfully collect the data from auto.ru,
+and despite the process was hard due to my lack of ability to read HTML code, it was fairly successful. I did manage to collect over 10000
+values, which was more than I ever expected to do before the project, yet still not enough to get good results. 
+While Bagging and Stacking was covered before, the implimentation of two was not covered, which also interrupted the process a bit.
+Instead of relying on histograms, I used pie charts, which proven to be much easier to read for an outside audience, as well as 
+show a better representation of data.
+Most outliers in this project could not really be removed. The number of outliers, as well as their context, just made the process of looking at
+how many outliers there were fairly redundant. E.g. a large chunk of SUV and limo type cars had to have a powerful engine due to their size,
+which resulted in many of them to be over the upper boundary of the power values. Similar thing occured to most cars - perhaps the only value
+that I could remove but did not was the mileage, but even then some of the cars were very old and would have a larger mileage, resulting in
+discarding of a data that would be used to predict some of the values from the test.csv.
+Out of the features that were not dropped the one that recieved the least analysis was models. This feature overall appeared to be very messy
+probably due to poor data collection from the website. 
+
+As a closure, I would like to share some of the personal sentiment about the project. While I am not interested in car market, nor do I
+know much about cars, seeing certain connections between different features proved to be fascinating, e.g. seeing which transmission types 
+appeared first, or which colour is usually used for more powerful cars.
